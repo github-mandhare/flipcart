@@ -1,3 +1,3 @@
-FROM pipelineimage1
+FROM ubuntu
 WORKDIR /lali
 COPY . /lali
