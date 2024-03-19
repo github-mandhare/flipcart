@@ -16,10 +16,10 @@ pipeline {
 			}}
 			stage('Docker build'){
 		    steps {
-			sh 'docker build -t mandharehub/ubuntu .'
+			sh 'docker build -t mandharehub/piplineimage1 .'
 			}}
 			stage('Container creation'){
 		    steps {
-			sh 'docker run -it -d --name=container-pipeline mandharehub/ubuntu /bin/bash'
+			sh 'docker run -it -d --name=container-pipeline mandharehub/piplineimage1 /bin/bash'
 			}}	
 }}
